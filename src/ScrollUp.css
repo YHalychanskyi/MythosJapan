@@ -1,0 +1,30 @@
+.ScrollUp {
+    position: fixed; 
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgba(85, 85, 85, 0.46);
+    transition: transform 0.2s ease;
+    z-index: 2000;
+}
+
+@media only screen and (max-width: 660px) {
+    .ScrollUp {
+        height: 35px;
+        width: 35px;
+        border-radius: 15px;
+        bottom: 15px;
+        right: 5px;
+    }
+}
+
+@media only screen and (min-width: 660px) and (max-width: 1024px) {
+    .ScrollUp {
+        height: 60px;
+        width: 60px;
+        bottom: 15px;
+        right: 15px;
+    }
+}

@@ -1,0 +1,251 @@
+@font-face {
+    font-family: 'PeapodThai';
+    src: url('./fonts/PeapodThai.ttf') format('truetype'); 
+}
+
+body, html {
+    background-color: black;
+}
+
+.main-container, .oni-container, .yokai-container, .kami-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center bottom; 
+    align-items: center; 
+    height: 100vh; 
+    width: 100vw;
+    background-size: cover;
+    background-position: center; 
+    transition: transform 0.7s ease;
+} 
+
+.types {
+    background-color: rgba(85, 85, 85, 0.568);
+    border-radius: 25px;
+    width: 615px;
+}
+
+
+.AboutOni, .AboutYokai, .AboutKami {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s ease; 
+  }
+  
+  .AboutOni.open, .AboutYokai.open, .AboutKami.open {
+    height: auto;
+    font-family: 'PeapodThai';
+    font-size: 20px;
+    width: 45%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(85, 85, 85, 0.849); 
+  }
+  
+.OniHeadingContainer, .YokaiHeadingContainer, .KamiHeadingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    width: 600px;
+    margin-top: 50px;
+    background-color: rgba(85, 85, 85, 0.46);
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1000; 
+    transition: transform 0.2s ease;    
+}
+
+.OniHeadingContainer:hover, .YokaiHeadingContainer:hover, .KamiHeadingContainer:hover {
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.oni-wrapper, .yokai-wrapper, .kami-wrapper {
+    position: relative;  
+}
+
+.oni-content, .yokai-content, .kami-content {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center bottom; 
+    align-items: center; 
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+} 
+
+.shifted {
+    transform: translateX(-100%); 
+}
+
+.shifted-right {
+    transform: translateX(0); 
+  }
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    width: 615px;
+    margin-top: 10px;
+    background-color: rgba(85, 85, 85, 0.46);
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+svg {
+    width: 600px;
+    margin-top: 10px;
+    background-color: rgba(85, 85, 85, 0.46);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.LearnMore {
+    font-size: 20px;
+    background-color: rgba(109, 109, 109, 0.788);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 660px) {
+    svg {
+        width: 220px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    button {
+        width: 240px;
+        height: 60px;
+        margin-top: 20px;  
+    }
+    .AboutOni.open {
+        width: 90%;    
+        font-size: 10px;
+        padding: 0;
+    }
+    .AboutYokai.open {
+        width: 90%; 
+        padding: 10px;
+        font-size: 5px;
+    }
+    .AboutKami.open {
+        width: 80%; 
+        padding: 20px;
+        font-size: 8.12px;  
+    }
+    .AboutOni.open, .AboutYokai.open, .AboutKami.open p{
+        font-size: 10px;
+    }
+    .OniHeadingContainer, .YokaiHeadingContainer, .KamiHeadingContainer {
+        width: 220px;
+        height: 70px;
+        margin-top: 5px;
+    }
+    .types {
+        width: 240px;
+        height: 70px;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .OniHeadingContainer {
+        position: relative;
+        top: -40px;
+        width: 30%;
+        height: 15%;
+    }
+    .YokaiHeadingContainer {
+        position: relative;
+        top: -40px;
+        width: 30%;
+        height: 15%;
+    }
+    .KamiHeadingContainer {
+        position: relative;
+        top: -40px;
+        width: 30%;
+        height: 15%;
+    }
+    .types {
+        width: 240px;
+        height: 70px;
+        margin-top: -15px;
+    }    
+    button p {
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .OniHeadingContainer h1{
+        font-size: 20px;
+    }
+    .YokaiHeadingContainer h1{
+        font-size: 20px;
+    }
+    .KamiHeadingContainer h1{
+        font-size: 20px;
+    }
+    .OniHeadingContainer p{
+        font-size: 12px;
+    }
+    .YokaiHeadingContainer p{
+        font-size: 12px;
+    }
+    .KamiHeadingContainer p{
+        font-size: 12px;
+    }
+    .AboutOni.open {
+        margin-top: -35.5px;
+        width: 85%;
+        font-size: 8px;
+        padding: 0;
+    }
+    .AboutYokai.open {
+        margin-top: -35.5px;
+        width: 85%;
+        font-size: 7px;
+        padding: 10px;
+    }
+    .AboutKami.open {
+        margin-top: -35.5px;
+        width: 85%;
+        font-size: 8px;
+        padding: 15px;
+    }
+    .AboutOni.open p {
+        margin-top: 10px;
+    }
+    .AboutYokai.open p {
+        margin-top: 10px;
+    }
+    .AboutKami.open p {
+        margin-top: 10px;
+    }
+    svg {
+        width: 29%;
+        height: 5%;
+    }
+    button {
+        width: 32%;
+        height: 10%; 
+        margin-bottom: 5px;
+    }
+    button h1 {
+        margin-top: 7px;
+        margin-left: 0;
+    }
+}

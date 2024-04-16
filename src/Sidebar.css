@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'PeapodThai';
+    src: url('./fonts/PeapodThai.ttf') format('truetype'); 
+}
+
+* {
+    font-family: 'PeapodThai';
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: #55555585;
+  transition: left 0.3s ease; 
+  z-index: 2000; 
+}
+  
+.sidebar.open {
+  left: 0;
+  background-color: #55555585;
+}
+  
+.toggle-button {
+  position: absolute;
+  background: none;   
+  top: 20px;
+  left: 300px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  width: 150px;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-content {
+  padding-top: 50px; 
+}
+
+.SideBarImage {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  background-color: #55555585;
+  padding: 25px;
+  border-radius: 25px;
+  z-index: 2000;
+}  
+
+.SideBarImage:hover {
+  background-color: #555;
+  transform: scale(0.95);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+  
+li {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+}
+  
+li:hover {
+  background-color: #555;
+}
+  
+@media screen and (max-width: 660px) { 
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .sidebar.open {
+    transform: translateY(0);
+  }
+  
+  .toggle-button {
+    top: auto;
+    bottom: 270px;
+    left: -45px;
+    position: absolute;
+  }
+    
+  .SideBarImage {
+    height: 35px;
+    width: 35px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px; 
+    width: 150px;
+    height: 100%;
+    background-color: #55555585;
+    transition: left 0.3s ease; 
+    z-index: 2000; 
+  }
+  
+  .sidebar.open {
+    left: 0;
+    background-color: #55555585;
+  }
+
+  .toggle-button {
+    position: absolute;
+    background: none;
+    top: 10%;
+    left: 270px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    transition: transform 0.2s ease;
+  }
+
+  .SideBarImage {
+    background-color: #55555585;
+    padding: 15px;
+    border-radius: 15px;
+  }
+}

@@ -1,0 +1,216 @@
+.carousel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  overflow: hidden; 
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px; 
+}
+
+.card {
+  width: 400px;
+  height: 550px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 25px;
+  position: relative; 
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease; 
+  cursor: pointer;
+}
+
+.card-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-content-front,
+.card-content-back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-content-back {
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.prev, .next {
+  font-size: 25px;
+  margin: 20px;
+  width: 150px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  width: 600px;
+  margin-top: 50px;
+  background-color: rgba(85, 85, 85, 0.46);
+  border-radius: 25px;
+  padding: 10px;
+  z-index: 1000; 
+  transition: transform 0.8s ease; 
+}
+
+@media screen and (max-width: 660px) {
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 350px;
+    width: 300px; 
+  }
+
+  .card {
+    width: 90%;
+    height: 60%;
+    margin-top: -100px;
+  }
+
+  .types {
+    margin-top: -15px;
+  }
+  .prev {
+    color: black;
+    text-decoration: none;
+    width: 80%;
+    height: 15%;
+  }
+
+  .next {
+    color: black;
+    text-decoration: none;
+    width: 80%;
+    height: 15%;
+    margin-top: -90px;
+  } 
+  .down {
+    margin-top: -25px;
+  }
+
+  .card-content-front::before {
+    height: 20%;
+  }
+
+.about {
+  height: auto;
+  padding: 7px;
+  font-size: 13px;
+  text-align: center;
+}
+p.about {
+  justify-content: center;
+}
+
+  .card-content-back{
+    width: 100%;
+  }
+  .card-content-front h1 {
+    white-space: nowrap;
+  }
+}
+
+@media screen and (max-height: 660px) {
+  .carousel {
+    margin-bottom: 20px;
+  }
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 350px;
+    margin-bottom: -85px;
+    margin-top: -20px;
+  }
+  .card {
+    width: 80%; 
+    height: 45%;
+    margin-bottom: 85px;
+    margin-top: -15px;
+  }
+  .down {
+    width: 220px;
+    margin-top: -58px;
+  }
+ .GoBack {
+    margin-top: 5px;
+    height: 40px;
+    width: 240px;
+  } 
+  button.prev{
+    height: 40px;
+    margin-top: 5px;
+    text-align: center; 
+    width: 100px;
+    margin-bottom: -20px;
+  }
+  button.next {
+    height: 40px;
+    margin-top: 5px;
+    text-align: center; 
+    width: 100px;
+    margin-bottom: -20px;
+  }
+  .card-content-back{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .card-content-front {
+    height: 25%;
+    width: 100%;
+    top: 75%;
+  }
+  .card-content-front::before{
+    height: 100%;
+  }
+  .card-content-back p {
+    font-size: 11px;
+  }
+  .oniName {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    white-space: nowrap;
+  }
+}
+

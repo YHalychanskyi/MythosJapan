@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'PeapodThai';
+  src: url('./fonts/PeapodThai.ttf') format('truetype'); 
+}
+
+.card {
+  position: relative;
+  width: 400px;
+  height: 550px;
+  margin-top: 25px;
+  perspective: 1000px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+p {
+  font-family: 'PeapodThai';
+  margin: 20px;
+}
+
+.about {
+  background-color: rgb(71, 71, 71);
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.card-content-front,
+.card-content-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  text-align: left;
+}
+
+.card-content-front {
+  transform: rotateY(0deg);
+  position: relative;
+}
+
+.card-content-front::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%; 
+  background-color: rgba(85, 85, 85, 0.719); 
+  z-index: -1; 
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.card-content-front h1 {
+  position: absolute;
+  bottom: 10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  margin: 0; 
+  font-size: 30px;
+}
+
+.card-content-back {
+  background-color: rgba(88, 88, 88, 0.8);
+  transform: rotateY(180deg); 
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-height: 660px) {
+  .card-content-front,
+  .card-content-back {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .card {
+    background-position: top center;
+  }
+}
