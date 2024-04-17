@@ -78,6 +78,9 @@
   transition: transform 0.8s ease; 
 }
 
+@media screen and (max-width: 1024px) {
+}
+
 @media screen and (max-width: 660px) {
   .carousel {
     display: flex;
@@ -150,6 +153,10 @@ p.about {
 }
 
 @media screen and (max-height: 660px) {
+  p {
+    color: black;
+    text-decoration: none;
+  }
   .carousel {
     margin-bottom: 20px;
   }
@@ -210,80 +217,6 @@ p.about {
   .oniName {
     margin-top: 10px;
     margin-bottom: -10px;
-    white-space: nowrap;
-  }
-}
-
-@media screen and (max-height: 1300px) {
-  .carousel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .oniName {
-    font-size: 35px;
-  }
-  p {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .cards-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    height: 350px;
-    width: 300px; 
-  }
-
-  .card {
-    width: 80%;
-    height: 70%;
-    margin-top: -100px;
-  }
-
-  .types {
-    margin-top: -15px;
-  }
-  .prev {
-    color: black;
-    text-decoration: none;
-    width: 80%;
-    height: 15%;
-    margin-bottom: 30px;
-  }
-
-  .next {
-    color: black;
-    text-decoration: none;
-    width: 80%;
-    height: 15%;
-    margin-top: -70px;
-  } 
-  .down {
-    margin-top: -25px;
-  }
-
-  .card-content-front::before {
-    height: 20%;
-  }
-
-.about {
-  height: auto;
-  padding: 7px;
-  font-size: 13px;
-  text-align: center;
-}
-p.about {
-  justify-content: center;
-}
-
-  .card-content-back{
-    width: 100%;
-  }
-  .card-content-front h1 {
     white-space: nowrap;
   }
 }

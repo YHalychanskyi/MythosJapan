@@ -117,8 +117,43 @@ svg {
     border-radius: 25px;
 }
 
+@media screen and (max-width: 1024px) {
+    .AboutOni.open {
+        width: 90%;    
+        font-size: 15px;
+        padding: 0;
+    }
+    .AboutYokai.open {
+        width: 90%; 
+        padding: 10px;
+        font-size: 15px;
+    }
+    .AboutKami.open {
+        width: 80%; 
+        padding: 20px;
+        font-size: 15px;  
+    }
+}
 
-@media screen and (max-width: 660px) and (max-width: 800px) {
+@media screen and (max-height: 1024px) {
+    .AboutOni.open {
+        width: 90%;    
+        font-size: 20px;
+        padding: 0;
+    }
+    .AboutYokai.open {
+        width: 90%; 
+        padding: 10px;
+        font-size: 20px;
+    }
+    .AboutKami.open {
+        width: 80%; 
+        padding: 20px;
+        font-size: 20px;  
+    }  
+}
+
+@media screen and (max-width: 660px){
     svg {
         width: 220px;
         height: 40px;
@@ -162,7 +197,7 @@ svg {
     }
 }
 
-@media screen and (max-height: 660px) and (max-height: 800px) {
+@media screen and (max-height: 660px){
     .OniHeadingContainer {
         position: relative;
         top: -40px;
