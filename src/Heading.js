@@ -6,7 +6,7 @@ function Heading() {
     return ( 
         <div className="Heading-container">
             <img src={toriiImage} alt='torii' />
-            <h1>MythosJapan aaaaaa</h1>
+            <h1>MythosJapan</h1>
         </div>  
     );
 }
