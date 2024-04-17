@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/MythosJapan/static/css/main.1f6cbc2b.css",
-    "main.js": "/MythosJapan/static/js/main.3ffbf730.js",
+    "main.js": "/MythosJapan/static/js/main.23f3d24a.js",
     "static/js/453.9a826a80.chunk.js": "/MythosJapan/static/js/453.9a826a80.chunk.js",
     "static/media/Sengen.jpg": "/MythosJapan/static/media/Sengen.9de8865423fdad6cc32e.jpg",
     "static/media/Raijin.jpg": "/MythosJapan/static/media/Raijin.c0701ee5aac25f007400.jpg",
@@ -59,11 +59,11 @@
     "static/media/Yamabiko.jpg": "/MythosJapan/static/media/Yamabiko.d701230339cedee1fd85.jpg",
     "index.html": "/MythosJapan/index.html",
     "main.1f6cbc2b.css.map": "/MythosJapan/static/css/main.1f6cbc2b.css.map",
-    "main.3ffbf730.js.map": "/MythosJapan/static/js/main.3ffbf730.js.map",
+    "main.23f3d24a.js.map": "/MythosJapan/static/js/main.23f3d24a.js.map",
     "453.9a826a80.chunk.js.map": "/MythosJapan/static/js/453.9a826a80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f6cbc2b.css",
-    "static/js/main.3ffbf730.js"
+    "static/js/main.23f3d24a.js"
   ]
 }
